@@ -14,6 +14,10 @@ app.post('/', async(req, res) => {
     res.send(data);
 });
 
+app.get('/', (req, res) => {
+    res.send('POST your Avanza-fund URL to this page.')
+});
+
 
 
 async function pupp(url){
