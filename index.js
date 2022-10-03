@@ -6,7 +6,7 @@ const puppeteer = require('puppeteer');
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.listen(PORT, () => console.log('Server is running on port 3001.'));
+app.listen($PORT, () => console.log('Server is running on port 3001.'));
 
 
 app.post('/', async(req, res) => {
