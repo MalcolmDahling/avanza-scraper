@@ -2,9 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const puppeteer = require('puppeteer');
 
-
 const app = express();
-app.use(cors());
+
+app.use(cors({
+    methods: ['GET', 'POST']
+}));
+
 app.use(express.json());
 
 
@@ -88,4 +91,4 @@ function getPercentage(str){
 
 PORT = process.env.PORT;
 
-app.listen(PORT, () => console.log('Server is running on port 3000.'));
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}.`));
