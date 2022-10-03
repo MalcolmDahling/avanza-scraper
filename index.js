@@ -6,7 +6,6 @@ const puppeteer = require('puppeteer');
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.listen(3000, () => console.log('Server is running on port 3000.'));
 
 
 app.post('/', async(req, res) => {
@@ -86,3 +85,6 @@ function getPercentage(str){
     return str;
 }
 
+
+
+app.listen(3000, () => console.log('Server is running on port 3000.'));
