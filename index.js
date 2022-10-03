@@ -5,6 +5,7 @@ const puppeteer = require('puppeteer');
 const app = express();
 
 app.use(cors({
+    origin: '*',
     methods: ['GET', 'POST']
 }));
 
