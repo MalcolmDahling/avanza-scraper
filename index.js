@@ -33,8 +33,7 @@ async function pupp(url){
 
     //NAME
     let name = await page.evaluate( () => document.querySelector('body > aza-app > aza-shell > div > main > div > aza-fund-guide > aza-subpage > div > div > div > div.page-header.ng-tns-c294-5.ng-star-inserted > h1').outerHTML );
-    name = name.slice(50);
-    name = name.slice(0, -13);
+    name = name.slice(50, -13);
     data.name = name;
     //NAME
 
