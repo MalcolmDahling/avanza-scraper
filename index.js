@@ -91,4 +91,4 @@ function getPercentage(str){
 // PORT = process.env.PORT;
 // app.listen(PORT, () => console.log(`Server is running on port ${PORT}.`));
 
-app.listen(3001, () => console.log(`Server is running on port 3001.`));
+app.listen(3030, () => console.log(`Server is running on port 3030.`));
