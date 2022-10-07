@@ -68,7 +68,7 @@ async function pupp(url){
     //THIS YEAR
 
     //ONE YEAR
-    let oneYear = await page.evaluate( () => document.querySelector('body > aza-app > aza-shell > div > main > div > aza-fund-guide > aza-subpage > div > div > div > div:nth-child(2) > div > aza-card > div.chart-wrapper > aza-area-chart > div > aza-period-picker > div > aza-period-button:nth-child(3) > button > span:nth-child(2)').outerHTML );
+    let oneYear = await page.evaluate( () => document.querySelector('body > aza-app > aza-shell > div > main > div > aza-fund-guide > aza-subpage > div > div > div > div:nth-child(2) > div > aza-card > div.chart-wrapper > aza-area-chart > div > aza-period-picker > div > aza-period-button:nth-child(4) > button > span:nth-child(2)').outerHTML );
     data.oneYear = getPercentage(oneYear);
     //ONE YEAR
     
