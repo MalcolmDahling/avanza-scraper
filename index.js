@@ -43,7 +43,7 @@ async function pupp(url){
 
     //DATE
     let date = await page.evaluate( () => document.querySelector('body > aza-app > aza-shell > div > main > div > aza-fund-guide > aza-subpage > div > div > div > div:nth-child(2) > div > aza-card > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) > span:nth-child(1)').outerHTML );
-    date = date.slice(69, 75);
+    date = date.slice(69, 74);
     data.date = date;
     //DATE
 
@@ -93,4 +93,4 @@ function getPercentage(str){
 // PORT = process.env.PORT;
 // app.listen(PORT, () => console.log(`Server is running on port ${PORT}.`));
 
-app.listen(3030, () => console.log(`Server is running on port 3030.`));
+app.listen(3031, () => console.log(`Server is running on port 3030.`));
