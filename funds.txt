@@ -1,0 +1,1 @@
+[{"name":"Aktiespararna Småbolag Edge","date":"27 okt","oneDay":"−0,24%","oneMonth":"+8,64%","threeMonths":"−8,27%","oneYear":"−22,47%","thisYear":"−29,84%"}]
