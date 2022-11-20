@@ -6,6 +6,7 @@ async function getFundData(url){
 
     let data = {
         name: '',
+        url:url,
         date: '',
         oneDay: '',
         oneMonth: '',

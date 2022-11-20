@@ -1,5 +1,5 @@
 {
-  "name": "avanza-api",
+  "name": "avanza-scraper",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MalcolmDahling/avanza-api.git"
+    "url": "git+https://github.com/MalcolmDahling/avanza-scraper.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MalcolmDahling/avanza-api/issues"
+    "url": "https://github.com/MalcolmDahling/avanza-scraper/issues"
   },
-  "homepage": "https://github.com/MalcolmDahling/avanza-api#readme",
+  "homepage": "https://github.com/MalcolmDahling/avanza-scraper#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.1",
