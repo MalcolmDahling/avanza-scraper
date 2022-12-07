@@ -24,16 +24,19 @@ async function getFunds(){
     let data = [];
 
     for(let i = 0; i < funds.length; i++){
+
         data.push( await getFundData.getFundData(funds[i]) );
     }
 
-    fs.writeFile('./funds.txt', JSON.stringify(data), err => {
+    fs.writeFile('./output/funds.json', JSON.stringify(data), err => {
+
         if(err){
             console.log(err);
         }
     });
 
-    fs.writeFile('./update.txt', JSON.stringify(date.getTime()), err => {
+    fs.writeFile('./output/update.json', JSON.stringify({"update": date.getTime()}), err => {
+
         if(err){
             console.log(err);
         }
@@ -52,11 +55,13 @@ setInterval(() => {
 let options = {root: path.join(__dirname)};
 
 app.get('/funds', (req, res) => {
-    res.sendFile('./funds.txt', options);
+
+    res.sendFile('./output/funds.json', options);
 });
 
 app.get('/update', (req, res) => {
-    res.sendFile('./update.txt', options);
+    
+    res.sendFile('./output/update.json', options);
 });
 
 
